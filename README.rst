@@ -6,7 +6,7 @@ This is the OpenBEL Eclipse_ repository.
 Update Sites
 ------------
 
-    Stable:
-    Unstable:
+    Stable: https://raw.github.com/belframework-org/eclipse/master/stable
+    Unstable: https://raw.github.com/belframework-org/eclipse/master/unstable
 
 .. _Eclipse: http://eclipse.org
