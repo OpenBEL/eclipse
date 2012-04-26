@@ -3,6 +3,13 @@ OpenBEL Eclipse Repository
 
 This is the OpenBEL Eclipse_ repository.
 
+Projects
+--------
+
+OpenBEL Workbench
+  https://github.com/belframework-org/OpenBEL-Workbench
+
+
 Update Sites
 ------------
 
