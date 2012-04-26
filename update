@@ -1,0 +1,52 @@
+#!/usr/bin/env bash
+echo "Hit [ENTER] and I'll update to the latest builds of OpenBEL Workbench."
+read
+
+
+### UNSTABLE ###
+
+echo
+echo -en "Updating unstable.\n"
+# GRAB IT FROM BAMBOO
+BUILD_KEY="browse/OBWUN-BUILD"
+ARTIFACT="unstable-repository.zip"
+LATEST="${BUILD_KEY}/latestSuccessful/artifact/JOB1/repository-zip/${ARTIFACT}"
+wget --quiet http://ci.selventa.com/${LATEST} || exit 1
+echo "Got $(/bin/ls -sh ${ARTIFACT} | awk '{ print $1 }') from Bamboo."
+
+# EXTRACT IT
+echo -en "Extracting... "
+cd unstable || exit 1
+unzip -oqq ../${ARTIFACT}
+cd - >/dev/null || exit 1
+echo "okay"
+
+# WACK THE ARTIFACT
+echo -en "Removing artifact... "
+rm ${ARTIFACT} || exit 1
+echo "okay"
+
+
+### STABLE ###
+
+echo
+echo -en "Updating stable.\n"
+# GRAB IT FROM BAMBOO
+BUILD_KEY="browse/OBWST-BUILD"
+ARTIFACT="stable-repository.zip"
+LATEST="${BUILD_KEY}/latestSuccessful/artifact/JOB1/repository-zip/${ARTIFACT}"
+wget --quiet http://ci.selventa.com/${LATEST} || exit 1
+echo "Got $(/bin/ls -sh ${ARTIFACT} | awk '{ print $1 }') from Bamboo."
+
+# EXTRACT IT
+echo -en "Extracting... "
+cd stable || exit 1
+unzip -oqq ../${ARTIFACT}
+cd - >/dev/null || exit 1
+echo "okay"
+
+# WACK THE ARTIFACT
+echo -en "Removing artifact... "
+rm ${ARTIFACT} || exit 1
+echo "okay"
+
