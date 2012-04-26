@@ -13,6 +13,9 @@ OpenBEL Workbench
 Update Sites
 ------------
 
+These update site URLs can be used within Eclipse by selecting *Install New
+Software...* from the *Help* menu.
+
     Stable: https://raw.github.com/belframework-org/eclipse/master/stable
 
     Unstable: https://raw.github.com/belframework-org/eclipse/master/unstable
