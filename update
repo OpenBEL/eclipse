@@ -1,5 +1,22 @@
 #!/usr/bin/env bash
 
+CUR_STABLE="$(ls -lt stable/features/org.openbel.workbench*.jar \
+            | egrep -o "[0-9]+.jar" \
+            | cut -d '.' -f1 \
+            | head -n 1)"
+if [ ! -z "${CUR_STABLE}" ]; then
+    echo -en "Relocating current stable to ${CUR_STABLE}... "
+    if [ ! -d "${CUR_STABLE}" ]; then
+        cp -a "stable" "${CUR_STABLE}"
+    fi
+    echo -en "okay\n"
+fi
+
+echo -en "Recreating stable and unstable... "
+rm -fr stable unstable
+mkdir -p stable unstable
+echo -en "okay\n"
+
 ### UNSTABLE ###
 echo
 echo -en "Updating unstable.\n"
