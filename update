@@ -1,10 +1,6 @@
 #!/usr/bin/env bash
-echo "Hit [ENTER] and I'll update to the latest builds of OpenBEL Workbench."
-read
-
 
 ### UNSTABLE ###
-
 echo
 echo -en "Updating unstable.\n"
 # GRAB IT FROM BAMBOO
@@ -28,7 +24,6 @@ echo "okay"
 
 
 ### STABLE ###
-
 echo
 echo -en "Updating stable.\n"
 # GRAB IT FROM BAMBOO
