@@ -2,21 +2,21 @@
 <?metadataRepository version='1.1.0'?>
 <repository name='publisher repository' type='org.eclipse.equinox.internal.p2.metadata.repository.LocalMetadataRepository' version='1'>
   <properties size='2'>
-    <property name='p2.timestamp' value='1335468022977'/>
+    <property name='p2.timestamp' value='1339538911393'/>
     <property name='p2.compressed' value='false'/>
   </properties>
   <units size='1'>
-    <unit id='201204261920.OpenBEL Workbench' version='1.0.0.2--cLd2vE773573A7E5K73'>
+    <unit id='201206122208.OpenBEL Workbench' version='1.0.0.2--cLd2vE773573E57773I'>
       <properties size='3'>
         <property name='org.eclipse.equinox.p2.name' value='OpenBEL Workbench'/>
         <property name='org.eclipse.equinox.p2.description' value='OpenBEL Workbench'/>
         <property name='org.eclipse.equinox.p2.type.category' value='true'/>
       </properties>
       <provides size='1'>
-        <provided namespace='org.eclipse.equinox.p2.iu' name='201204261920.OpenBEL Workbench' version='1.0.0.2--cLd2vE773573A7E5K73'/>
+        <provided namespace='org.eclipse.equinox.p2.iu' name='201206122208.OpenBEL Workbench' version='1.0.0.2--cLd2vE773573E57773I'/>
       </provides>
       <requires size='1'>
-        <required namespace='org.eclipse.equinox.p2.iu' name='org.openbel.workbench.feature.group' range='[1.0.0.201204261920,1.0.0.201204261920]'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='org.openbel.workbench.feature.group' range='[1.0.0.201206122208,1.0.0.201206122208]'/>
       </requires>
       <touchpoint id='null' version='0.0.0'/>
     </unit>
