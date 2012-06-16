@@ -21,7 +21,7 @@ echo -en "okay\n"
 echo
 echo -en "Updating unstable.\n"
 # GRAB IT FROM BAMBOO
-BUILD_KEY="browse/OBWUN-BUILD"
+BUILD_KEY="browse/BELEDITOR-BUILDUNSTABLE"
 ARTIFACT="unstable-repository.zip"
 LATEST="${BUILD_KEY}/latestSuccessful/artifact/JOB1/repository-zip/${ARTIFACT}"
 wget --quiet http://ci.selventa.com/${LATEST} || exit 1
@@ -44,7 +44,7 @@ echo "okay"
 echo
 echo -en "Updating stable.\n"
 # GRAB IT FROM BAMBOO
-BUILD_KEY="browse/OBWST-BUILD"
+BUILD_KEY="browse/BELEDITOR-BUILDSTABLE"
 ARTIFACT="stable-repository.zip"
 LATEST="${BUILD_KEY}/latestSuccessful/artifact/JOB1/repository-zip/${ARTIFACT}"
 wget --quiet http://ci.selventa.com/${LATEST} || exit 1
