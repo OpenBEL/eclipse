@@ -2,21 +2,21 @@
 <?metadataRepository version='1.1.0'?>
 <repository name='publisher repository' type='org.eclipse.equinox.internal.p2.metadata.repository.LocalMetadataRepository' version='1'>
   <properties size='2'>
-    <property name='p2.timestamp' value='1339816584441'/>
+    <property name='p2.timestamp' value='1344965484079'/>
     <property name='p2.compressed' value='false'/>
   </properties>
   <units size='1'>
-    <unit id='201206160316.BEL Editor' version='1.0.0.2--cLY6vE773573E5E395E'>
+    <unit id='201208141731.BEL Editor' version='1.0.0.2--cLY6vE773573I5A5G95'>
       <properties size='3'>
         <property name='org.eclipse.equinox.p2.name' value='BEL Editor'/>
         <property name='org.eclipse.equinox.p2.description' value='BEL Editor'/>
         <property name='org.eclipse.equinox.p2.type.category' value='true'/>
       </properties>
       <provides size='1'>
-        <provided namespace='org.eclipse.equinox.p2.iu' name='201206160316.BEL Editor' version='1.0.0.2--cLY6vE773573E5E395E'/>
+        <provided namespace='org.eclipse.equinox.p2.iu' name='201208141731.BEL Editor' version='1.0.0.2--cLY6vE773573I5A5G95'/>
       </provides>
       <requires size='1'>
-        <required namespace='org.eclipse.equinox.p2.iu' name='org.openbel.editor.feature.group' range='[1.0.0.201206160316,1.0.0.201206160316]'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='org.openbel.editor.feature.group' range='[1.0.0.201208141731,1.0.0.201208141731]'/>
       </requires>
       <touchpoint id='null' version='0.0.0'/>
     </unit>
