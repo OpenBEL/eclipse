@@ -15,8 +15,8 @@ Update Sites
 These update site URLs can be used within Eclipse by selecting *Install New
 Software...* from the *Help* menu.
 
-    Stable: https://raw.github.com/OpenBEL/eclipse/master/stable
+    Stable: https://github.com/OpenBEL/eclipse/raw/master/stable
 
-    Unstable: https://raw.github.com/OpenBEL/eclipse/master/unstable
+    Unstable: https://github.com/OpenBEL/eclipse/raw/master/unstable
 
 .. _Eclipse: http://eclipse.org
